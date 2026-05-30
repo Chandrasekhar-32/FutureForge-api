@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Search — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Job Search</h1>
+        <p>Search internships and entry-level roles (Adzuna API when configured)</p>
+      </div>
+      <div class="card" style="margin-bottom:24px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px">
+          <div class="form-group" style="margin:0"><label>Keywords</label><input id="jobQ" value="software engineer intern" /></div>
+          <div class="form-group" style="margin:0"><label>Location</label><input id="jobLoc" placeholder="City or remote" /></div>
+          <div class="form-group" style="margin:0"><label>Skill filter</label><input id="jobSkill" placeholder="React, Java..." /></div>
+          <div class="form-group" style="margin:0"><label>&nbsp;</label><label><input type="checkbox" id="jobRemote" /> Remote only</label></div>
+        </div>
+        <button class="btn btn-primary" style="margin-top:16px" id="searchJobs">Search Jobs</button>
+      </div>
+      <p id="jobSource" style="color:var(--text-muted);font-size:0.85rem;margin-bottom:12px"></p>
+      <div id="jobsList"></div>
+      <h3 style="margin-top:32px">Saved jobs</h3>
+      <div id="savedJobs" class="features-grid" style="margin-top:12px"></div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+</html>

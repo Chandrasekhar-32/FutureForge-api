@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Dashboard</h1>
+        <p id="welcomeText">Your career command center</p>
+      </div>
+      <div class="stats-grid" id="statsGrid"></div>
+      <div class="charts-row">
+        <div class="card">
+          <h3 style="margin-bottom:16px">Career Match %</h3>
+          <canvas id="matchChart" height="200"></canvas>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:16px">Assessment Dimensions</h3>
+          <canvas id="radarChart" height="200"></canvas>
+        </div>
+      </div>
+      <div class="card" style="margin-top:24px">
+        <h3 style="margin-bottom:12px">Quick actions</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="assessment.html" class="btn btn-secondary btn-sm">Take Assessment</a>
+          <a href="resume.html" class="btn btn-secondary btn-sm">Analyze Resume</a>
+          <a href="interview.html" class="btn btn-secondary btn-sm">Mock Interview</a>
+          <a href="roadmap.html" class="btn btn-secondary btn-sm">View Roadmap</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

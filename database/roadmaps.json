@@ -1,0 +1,110 @@
+{
+  "ai-engineer": {
+    "title": "AI Engineer",
+    "totalMonths": 6,
+    "phases": [
+      { "month": 1, "topics": ["Python fundamentals", "Git & Linux", "Linear algebra refresh"], "projects": ["CLI data tool"] },
+      { "month": 2, "topics": ["DSA basics", "SQL", "NumPy & Pandas"], "projects": ["EDA notebook on Kaggle dataset"] },
+      { "month": 3, "topics": ["Machine Learning", "Scikit-learn", "Model evaluation"], "projects": ["Classification pipeline"] },
+      { "month": 4, "topics": ["Deep Learning", "PyTorch", "CNNs & transformers intro"], "projects": ["Image classifier"] },
+      { "month": 5, "topics": ["LLMs & prompt engineering", "RAG basics", "MLOps intro"], "projects": ["Career Q&A chatbot"] },
+      { "month": 6, "topics": ["Deploy models", "Cloud (AWS/GCP)", "Portfolio polish"], "projects": ["End-to-end ML API"] }
+    ]
+  },
+  "software-engineer": {
+    "title": "Software Engineer",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Programming basics", "Git", "HTML/CSS"], "projects": ["Personal site"] },
+      { "month": 2, "topics": ["JavaScript", "DSA arrays/strings", "REST APIs"], "projects": ["Todo API"] },
+      { "month": 3, "topics": ["React", "State management", "Testing"], "projects": ["Dashboard app"] },
+      { "month": 4, "topics": ["Node.js", "Databases", "Auth"], "projects": ["Full-stack CRUD app"] },
+      { "month": 5, "topics": ["System design basics", "CI/CD", "Interview prep"], "projects": ["Capstone + LeetCode plan"] }
+    ]
+  },
+  "data-scientist": {
+    "title": "Data Scientist",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Python", "Statistics", "SQL"], "projects": ["Sales analysis report"] },
+      { "month": 2, "topics": ["Pandas", "Visualization", "Hypothesis testing"], "projects": ["A/B test simulation"] },
+      { "month": 3, "topics": ["Feature engineering", "Regression & classification"], "projects": ["Churn prediction model"] },
+      { "month": 4, "topics": ["Time series", "NLP basics", "Experiment design"], "projects": ["Sentiment analysis"] },
+      { "month": 5, "topics": ["MLOps lite", "Storytelling", "Case studies"], "projects": ["Portfolio case study deck"] }
+    ]
+  },
+  "frontend-developer": {
+    "title": "Frontend Developer",
+    "totalMonths": 4,
+    "phases": [
+      { "month": 1, "topics": ["HTML5", "CSS Grid/Flexbox", "Responsive design"], "projects": ["Landing page clone"] },
+      { "month": 2, "topics": ["JavaScript ES6+", "DOM", "Fetch API"], "projects": ["Weather app"] },
+      { "month": 3, "topics": ["React", "Hooks", "React Router"], "projects": ["SPA with routing"] },
+      { "month": 4, "topics": ["TypeScript", "Testing", "Performance"], "projects": ["Production-ready UI kit demo"] }
+    ]
+  },
+  "java-developer": {
+    "title": "Java Developer",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Java OOP", "Collections", "Maven"], "projects": ["Console banking app"] },
+      { "month": 2, "topics": ["Spring Boot", "REST", "JPA"], "projects": ["REST API with H2"] },
+      { "month": 3, "topics": ["SQL", "Microservices intro", "JUnit"], "projects": ["Order service"] },
+      { "month": 4, "topics": ["Kafka", "Docker", "Security"], "projects": ["Event-driven microservice"] },
+      { "month": 5, "topics": ["System design", "Interview DSA", "Cloud deploy"], "projects": ["Capstone on AWS"] }
+    ]
+  },
+  "data-analyst": {
+    "title": "Data Analyst",
+    "totalMonths": 4,
+    "phases": [
+      { "month": 1, "topics": ["Excel advanced", "SQL SELECT/JOIN", "Data cleaning"], "projects": ["Sales dashboard in Excel"] },
+      { "month": 2, "topics": ["Python for analysis", "Pandas", "Visualization"], "projects": ["Marketing funnel analysis"] },
+      { "month": 3, "topics": ["Power BI / Tableau", "KPIs", "Storytelling"], "projects": ["Executive dashboard"] },
+      { "month": 4, "topics": ["A/B testing", "Statistics", "Portfolio"], "projects": ["End-to-end analytics case study"] }
+    ]
+  },
+  "cricketer": {
+    "title": "Cricketer",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Cricket rules & formats", "Batting/bowling/fielding basics", "Fitness & injury prevention"], "projects": ["Training diary"] },
+      { "month": 2, "topics": ["Net practice routines", "Strength & agility", "Video technique review"], "projects": ["30-day skill plan"] },
+      { "month": 3, "topics": ["Match awareness", "Mental performance", "Nutrition"], "projects": ["Match log"] },
+      { "month": 4, "topics": ["Club/academy trials", "Highlight reel", "Coach networking"], "projects": ["Highlight video"] },
+      { "month": 5, "topics": ["League pathway research", "Personal brand", "Backup career plan"], "projects": ["Trial packet"] }
+    ]
+  },
+  "professional-athlete": {
+    "title": "Professional Athlete",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Sport fundamentals", "Fitness baseline", "Nutrition basics"], "projects": ["Training log"] },
+      { "month": 2, "topics": ["Skill drills", "Strength program", "Recovery habits"], "projects": ["8-week progression plan"] },
+      { "month": 3, "topics": ["Competition prep", "Mental performance", "Video review"], "projects": ["Highlight reel"] },
+      { "month": 4, "topics": ["Trials & scouting", "Agent/league research", "Injury prevention"], "projects": ["Trial application package"] },
+      { "month": 5, "topics": ["Brand & sponsorship basics", "Media training", "Career backup plan"], "projects": ["Personal brand one-pager"] }
+    ]
+  },
+  "sports-coach": {
+    "title": "Sports Coach",
+    "totalMonths": 4,
+    "phases": [
+      { "month": 1, "topics": ["Coaching philosophy", "Sport rules deep dive", "Practice planning"], "projects": ["Sample practice plan"] },
+      { "month": 2, "topics": ["Player development", "Communication with athletes", "Video analysis tools"], "projects": ["Player feedback template"] },
+      { "month": 3, "topics": ["Game strategy", "Safety & first aid", "Parent/admin communication"], "projects": ["Season playbook outline"] },
+      { "month": 4, "topics": ["Certification pathway", "Job applications", "Portfolio of teams coached"], "projects": ["Coaching resume + references"] }
+    ]
+  },
+  "athletic-trainer": {
+    "title": "Athletic Trainer",
+    "totalMonths": 5,
+    "phases": [
+      { "month": 1, "topics": ["Anatomy refresh", "Injury types overview", "First aid/CPR"], "projects": ["Study notes binder"] },
+      { "month": 2, "topics": ["Assessment techniques", "Rehab exercise library", "Taping & bracing"], "projects": ["Case study write-up"] },
+      { "month": 3, "topics": ["Return-to-play protocols", "Communication with coaches", "Documentation"], "projects": ["Mock rehab plan"] },
+      { "month": 4, "topics": ["Clinical hours / internship", "BOC exam prep", "Ethics"], "projects": ["Internship log"] },
+      { "month": 5, "topics": ["Job search", "Interview prep", "Continuing education plan"], "projects": ["Certification checklist"] }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Assessment — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Find careers that fit you</h1>
+        <p>Student assessment · 25 questions · matches across tech, sports, healthcare, business & more</p>
+      </div>
+      <div class="card" id="quizCard">
+        <div id="progressText" style="margin-bottom:16px;color:var(--text-muted)"></div>
+        <div class="progress-bar" style="margin-bottom:24px"><div class="progress-bar-fill" id="quizProgress" style="width:0%"></div></div>
+        <h2 id="questionText"></h2>
+        <div id="options" style="margin-top:24px;display:flex;flex-direction:column;gap:10px"></div>
+      </div>
+      <div class="card" id="resultsCard" style="display:none;margin-top:24px">
+        <h2>Your career matches</h2>
+        <ul class="match-list" id="matchList"></ul>
+        <canvas id="resultRadar" height="220" style="margin-top:24px"></canvas>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/assessment.js"></script>
+</body>
+</html>

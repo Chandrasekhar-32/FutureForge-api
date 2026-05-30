@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Roadmap — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Your personal learning roadmap</h1>
+        <p>Students: type any career you want to develop — we generate a month-by-month plan with skills and projects</p>
+      </div>
+
+      <div class="card" style="margin-bottom:20px">
+        <label style="display:block;font-size:0.85rem;color:var(--text-muted);margin-bottom:8px">Your career path</label>
+        <div id="careerPickerMount"></div>
+        <button class="btn btn-primary" style="margin-top:12px" id="loadRoadmapBtn">Generate roadmap</button>
+      </div>
+
+      <div class="card" style="margin-bottom:20px">
+        <h3 style="margin-bottom:12px">Quick start</h3>
+        <div id="quickCareers" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+      </div>
+
+      <div id="alert" hidden class="alert" style="margin-bottom:16px"></div>
+
+      <div id="progressSection" class="card" style="margin:20px 0;display:none">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span>Overall progress</span>
+          <strong id="progressPct">0%</strong>
+        </div>
+        <div class="progress-bar"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
+      </div>
+      <div id="roadmapTimeline"></div>
+      <button class="btn btn-primary" id="saveProgress" style="margin-top:20px;display:none">Save progress</button>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/career-picker.js"></script>
+  <script src="js/roadmap.js"></script>
+</body>
+</html>

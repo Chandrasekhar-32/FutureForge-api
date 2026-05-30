@@ -1,0 +1,119 @@
+{
+  "frontend-developer": {
+    "technical": [
+      "Explain the React Virtual DOM and reconciliation.",
+      "What is the difference between controlled and uncontrolled components?",
+      "How does CSS specificity work?",
+      "Explain REST APIs and HTTP methods.",
+      "What are Web Vitals and how do you optimize LCP?"
+    ],
+    "behavioral": [
+      "Tell me about a time you improved UX based on user feedback.",
+      "How do you handle conflicting priorities from design and engineering?"
+    ]
+  },
+  "java-developer": {
+    "technical": [
+      "Difference between == and equals() in Java.",
+      "Explain Spring Boot dependency injection.",
+      "What is the difference between SQL and NoSQL?",
+      "How does garbage collection work in JVM?",
+      "Explain microservices vs monolith trade-offs."
+    ],
+    "behavioral": [
+      "Describe a production bug you fixed under pressure.",
+      "How do you ensure code quality in a team?"
+    ]
+  },
+  "data-analyst": {
+    "technical": [
+      "Write a SQL query to find the second highest salary per department.",
+      "Explain correlation vs causation with an example.",
+      "When would you use a bar chart vs line chart?",
+      "What is a cohort analysis?",
+      "How do you handle missing data?"
+    ],
+    "behavioral": [
+      "Tell me about an insight that changed a business decision.",
+      "How do you explain technical findings to non-technical stakeholders?"
+    ]
+  },
+  "ai-engineer": {
+    "technical": [
+      "Explain bias-variance tradeoff.",
+      "What is transfer learning?",
+      "How do transformers differ from RNNs?",
+      "Describe your MLOps deployment pipeline.",
+      "How would you evaluate an LLM application?"
+    ],
+    "behavioral": [
+      "Tell me about an ML project from problem to deployment.",
+      "How do you stay current with fast-moving AI research?"
+    ]
+  },
+  "software-engineer": {
+    "technical": [
+      "Explain Big-O for common sorting algorithms.",
+      "Design a URL shortener (high level).",
+      "What is caching and where would you use Redis?",
+      "Difference between processes and threads.",
+      "Explain CI/CD pipeline stages."
+    ],
+    "behavioral": [
+      "Describe a technical decision you disagreed with.",
+      "How do you estimate task complexity?"
+    ]
+  },
+  "professional-athlete": {
+    "skills": [
+      "How do you structure your weekly training cycle?",
+      "How do you handle performance slumps?",
+      "What is your approach to nutrition on competition days?",
+      "How do you prevent and manage injuries?",
+      "Describe your most important competitive achievement."
+    ],
+    "behavioral": [
+      "Tell me about a time you showed leadership on your team.",
+      "How do you balance academics/work and sport?"
+    ]
+  },
+  "sports-coach": {
+    "skills": [
+      "How do you design a practice plan for different skill levels?",
+      "How do you give constructive feedback after a loss?",
+      "Explain how you use video analysis in coaching.",
+      "How do you handle parent or player conflicts?",
+      "What metrics do you track for player development?"
+    ],
+    "behavioral": [
+      "Describe a time you improved team culture.",
+      "How do you adapt tactics mid-game?"
+    ]
+  },
+  "athletic-trainer": {
+    "skills": [
+      "Walk through your assessment for an ankle sprain.",
+      "When would you refer an athlete to a physician?",
+      "Explain a return-to-play protocol you have used.",
+      "How do you document injuries for compliance?",
+      "What continuing education do you pursue?"
+    ],
+    "behavioral": [
+      "Tell me about working under pressure during a game.",
+      "How do you communicate with coaches about player readiness?"
+    ]
+  },
+  "sports-analyst": {
+    "skills": [
+      "How do you use data to evaluate player performance?",
+      "What tools have you used for video or stats analysis?",
+      "Explain how you would scout an opposing team.",
+      "How do you present insights to non-technical coaches?",
+      "Describe a project where data changed a decision."
+    ],
+    "behavioral": [
+      "How do you handle tight deadlines before a match?",
+      "Tell me about a time you were wrong and corrected your analysis."
+    ]
+  }
+}

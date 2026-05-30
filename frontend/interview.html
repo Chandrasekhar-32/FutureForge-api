@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Coach — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Interview Coach</h1>
+        <p>Practice for any career — athlete, coach, engineer, nurse, or your own path</p>
+      </div>
+      <div class="card">
+        <label style="display:block;font-size:0.85rem;color:var(--text-muted);margin-bottom:8px">Career / role for interview</label>
+        <div id="careerPickerMount"></div>
+        <button class="btn btn-primary" id="startInterview" style="margin-top:16px">Start Mock Interview</button>
+      </div>
+      <div id="interviewPanel" class="card" style="margin-top:24px;display:none">
+        <p class="tag" id="qNum"></p>
+        <h2 id="currentQ" style="margin:16px 0"></h2>
+        <textarea id="answerInput" rows="5" placeholder="Type your answer..."></textarea>
+        <button class="btn btn-primary" style="margin-top:12px" id="submitAnswer">Submit Answer</button>
+        <div id="feedback" class="card" style="margin-top:20px;display:none;background:var(--bg-elevated)"></div>
+        <button class="btn btn-secondary btn-sm" id="nextQ" style="margin-top:12px;display:none">Next Question →</button>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/career-picker.js"></script>
+  <script src="js/interview.js"></script>
+</body>
+</html>

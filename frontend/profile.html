@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Profile</h1>
+        <p>Manage your account and target career</p>
+      </div>
+      <div class="card" style="max-width:480px">
+        <div id="alert" hidden></div>
+        <form id="profileForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" id="profileName" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="profileEmail" disabled />
+          </div>
+          <div class="form-group">
+            <label>Target career (any field)</label>
+            <div id="careerPickerMount"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Save Profile</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/career-picker.js"></script>
+  <script>
+    if (!FF.requireAuth()) throw new Error('auth');
+    FF.initNav('profile');
+    document.getElementById('sidebar').innerHTML = FF.renderSidebar('profile');
+
+    let pickerApi = null;
+
+    async function load() {
+      await FF.CareerPicker.load();
+      const { user } = await FF.api('/api/auth/profile');
+      document.getElementById('profileName').value = user.name || '';
+      document.getElementById('profileEmail').value = user.email || '';
+      pickerApi = FF.CareerPicker.mount(document.getElementById('careerPickerMount'), {
+        showCategoryFilter: true,
+        careerId: user.targetCareer || '',
+        value: user.targetCareerTitle || '',
+      });
+    }
+
+    document.getElementById('profileForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const alertEl = document.getElementById('alert');
+      const { careerId, title, customTitle } = pickerApi.getValue();
+      try {
+        await FF.api('/api/auth/profile', {
+          method: 'PUT',
+          body: JSON.stringify({
+            name: document.getElementById('profileName').value,
+            targetCareer: careerId || customTitle || title,
+            targetCareerTitle: customTitle || title,
+          }),
+        });
+        const u = FF.getUser();
+        FF.setUser({ ...u, name: document.getElementById('profileName').value });
+        FF.showAlert(alertEl, 'Profile updated!', 'success');
+      } catch (err) {
+        FF.showAlert(alertEl, err.message);
+      }
+    });
+    load();
+  </script>
+</body>
+</html>

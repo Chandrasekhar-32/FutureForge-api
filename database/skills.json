@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "name": "Programming",
+      "skills": ["Python", "JavaScript", "Java", "TypeScript", "C++", "Go", "Rust"]
+    },
+    {
+      "name": "Web & Frontend",
+      "skills": ["React", "Angular", "Vue", "Next.js", "HTML/CSS", "Tailwind"]
+    },
+    {
+      "name": "Backend & APIs",
+      "skills": ["Node.js", "Spring Boot", "REST", "GraphQL", "Microservices"]
+    },
+    {
+      "name": "Data & AI",
+      "skills": ["SQL", "Pandas", "TensorFlow", "PyTorch", "LLMs", "MLOps"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+    },
+    {
+      "name": "Soft Skills",
+      "skills": ["Communication", "Leadership", "Problem Solving", "Teamwork", "Agile"]
+    }
+  ],
+  "trending2026": ["AI/ML", "Cloud Security", "LLM Engineering", "Platform Engineering", "React", "TypeScript", "Kubernetes"]
+}

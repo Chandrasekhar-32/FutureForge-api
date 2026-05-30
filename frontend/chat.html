@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Coach — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main style="padding-bottom:48px">
+      <div class="page-header">
+        <h1>AI Career Coach</h1>
+        <p>Ask anything about careers, skills, resumes, interviews, jobs, projects, or learning plans</p>
+      </div>
+      <div class="card" style="margin-bottom:16px">
+        <label style="font-size:0.85rem;color:var(--text-muted)">Your target career (optional)</label>
+        <div id="careerContextMount" style="margin-top:8px"></div>
+      </div>
+      <div class="chat-layout">
+        <div class="chat-suggestions" id="suggestions">
+          <button type="button">How can I become an AI Engineer?</button>
+          <button type="button">I know Java and DSA. What should I learn next?</button>
+          <button type="button">Analyze my resume gaps for a fresher role</button>
+          <button type="button">Create a 6 month roadmap for Data Analyst</button>
+          <button type="button">Prepare me for a frontend interview</button>
+        </div>
+        <div class="chat-messages" id="messages"></div>
+        <p class="typing-indicator" id="typing" hidden>Coach is thinking...</p>
+        <div class="chat-input-row">
+          <textarea id="chatInput" rows="2" placeholder="Ask any question or give a command..."></textarea>
+          <button class="btn btn-primary" id="sendBtn">Send</button>
+        </div>
+        <div style="padding:0 16px 12px;display:flex;justify-content:space-between;align-items:center">
+          <span id="chatMode" style="font-size:0.75rem;color:var(--text-muted)"></span>
+          <button type="button" class="btn btn-ghost btn-sm" id="clearChat">Clear chat</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/utils.js?v=4"></script>
+  <script src="js/coach-fallback.js?v=4"></script>
+  <script src="js/career-picker.js?v=4"></script>
+  <script>
+    FF.initNav('chat');
+    document.getElementById('sidebar').innerHTML = FF.renderSidebar('chat');
+  </script>
+  <script src="js/chat.js?v=4"></script>
+</body>
+</html>

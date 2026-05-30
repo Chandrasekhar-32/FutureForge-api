@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Explorer — FutureForge AI</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="nav-root"></div>
+  <div class="container layout-with-sidebar">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main>
+      <div class="page-header">
+        <h1>Career Explorer</h1>
+        <p>For students exploring options — compare salaries, skills, and paths in every field</p>
+      </div>
+
+      <div class="card" style="margin-bottom:24px">
+        <h3 style="margin-bottom:12px">Explore any career</h3>
+        <div id="explorerPicker"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+          <button type="button" class="btn btn-primary btn-sm" id="explorerRoadmap">View roadmap</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="explorerInterview">Practice interview</button>
+          <a href="chat.html" class="btn btn-secondary btn-sm">Ask AI coach</a>
+        </div>
+      </div>
+
+      <div class="category-pills" id="categoryPills"></div>
+
+      <div class="card" style="margin-bottom:24px;display:none" id="sportsHighlight"></div>
+
+      <div class="card" style="margin-bottom:24px">
+        <h3 style="margin-bottom:12px">Compare two careers</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:end">
+          <div class="form-group" style="flex:1;min-width:140px;margin:0">
+            <label>Career A</label>
+            <select id="compareA"></select>
+          </div>
+          <div class="form-group" style="flex:1;min-width:140px;margin:0">
+            <label>Career B</label>
+            <select id="compareB"></select>
+          </div>
+          <button class="btn btn-primary btn-sm" id="compareBtn">Compare</button>
+        </div>
+        <div id="compareResult" style="margin-top:20px"></div>
+      </div>
+
+      <input type="search" id="searchCareers" placeholder="Search any career or skill..." style="margin-bottom:20px" />
+      <p id="careerCount" style="color:var(--text-muted);font-size:0.9rem;margin-bottom:12px"></p>
+      <div id="careersGrid" class="features-grid"></div>
+      <div id="careerDetail" class="card" style="margin-top:24px;display:none"></div>
+    </main>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/career-picker.js"></script>
+  <script src="js/careers.js"></script>
+</body>
+</html>
