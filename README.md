@@ -74,15 +74,6 @@ futureforge-ai/
 2. Set `CLIENT_URL` to your frontend URL for CORS if split.
 3. Connect MongoDB Atlas and add `MONGODB_URI`.
 
-## Resume / Portfolio Talking Points
-
-- Full-stack architecture with REST API and JWT auth
-- AI integration (Gemini) with graceful fallbacks
-- Product design: dashboard, assessment, coach UX
-- Data modeling: User, Assessment, Resume, Interview, Chat
-- Real-world APIs (Adzuna jobs) with demo mode
-- Chart.js analytics and PDF resume parsing
-
 ## License
 
 MIT
